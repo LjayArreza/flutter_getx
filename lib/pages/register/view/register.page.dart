@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/core/common/constants.dart';
-import 'package:flutter_getx/core/common/reusable_components/custom_reusable_appbar.dart';
-import 'package:flutter_getx/core/common/reusable_components/custom_reusable_text.dart';
+import 'package:flutter_getx/app/config/constants.dart';
+import 'package:flutter_getx/app/core/reusable_components/custom_reusable_appbar.dart';
+import 'package:flutter_getx/app/core/reusable_components/custom_reusable_text.dart';
+
 import 'package:flutter_getx/pages/register/widgets/registration_textFields.widget.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';

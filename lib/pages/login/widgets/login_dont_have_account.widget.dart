@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/core/routes/app_pages.dart';
+import 'package:flutter_getx/app/core/routes/app_pages.dart';
+import 'package:flutter_getx/app/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -56,13 +57,13 @@ class LoginDontHaveAccount extends GetWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image(
-                image: AssetImage('assets/icons/fb.png'),
+                image: AssetImage(Utils.getIcons('fb')),
               ),
               Image(
-                image: AssetImage('assets/icons/twitter.png'),
+                image: AssetImage(Utils.getIcons('twitter')),
               ),
               Image(
-                image: AssetImage('assets/icons/gmail.png'),
+                image: AssetImage(Utils.getIcons('gmail')),
               ),
             ],
           )

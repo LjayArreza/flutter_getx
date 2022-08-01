@@ -1,6 +1,9 @@
-import 'package:flutter_getx/core/utils/dio_service.dart';
+import 'package:flutter_getx/app/services/dio_service.dart';
 import 'package:flutter_getx/data/model/error400_response_model.dart';
+import 'package:flutter_getx/data/model/loginModel.dart';
 import 'package:flutter_getx/data/model/login_response_model.dart';
+import 'package:flutter_getx/data/provider/network/apis/api_endpoint.dart';
+import 'package:flutter_getx/data/provider/network/apis/api_request_representable.dart';
 import 'package:logger/logger.dart';
 
 class UserRepository {
@@ -8,17 +11,13 @@ class UserRepository {
   final logger = Logger();
   UserRepository();
 
-  // Declare api method here
-
   Future<dynamic> loginUser(
       {required String email, required String password}) async {
-    const targetUri = '/api/login';
-
     httpService.init();
     try {
       var response = await httpService.request(
-        url: targetUri,
-        method: ApiMethod.POST,
+        url: APIEndpoint.LOGIN,
+        method: ApiMethod.post,
         params: {'email': email, 'password': password},
       );
 

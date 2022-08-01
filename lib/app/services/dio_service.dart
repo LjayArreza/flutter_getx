@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter_getx/data/provider/network/apis/api_endpoint.dart';
+import 'package:flutter_getx/data/provider/network/apis/api_request_representable.dart';
 import 'package:logger/logger.dart';
-
-enum ApiMethod { POST, GET, PUT, DELETE, PATCH }
 
 class DioHttpService {
   Dio? _dio;
@@ -16,11 +16,9 @@ class DioHttpService {
     }
   };
 
-  static final BASE_URL = "https://reqres.in";
-
   Future<DioHttpService> init() async {
     _dio = Dio(BaseOptions(
-        baseUrl: BASE_URL,
+        baseUrl: APIEndpoint.BASE_URL,
         connectTimeout: 3000,
         receiveTimeout: 3000,
         responseType: ResponseType.json));
@@ -67,7 +65,7 @@ DATA : ${err.response}
     Response response;
 
     try {
-      if (method == ApiMethod.POST) {
+      if (method == ApiMethod.post) {
         response = await _dio!.post(url,
             data: params,
             options: Options(
@@ -76,7 +74,7 @@ DATA : ${err.response}
                   return status! < 500;
                 },
                 headers: {...defaultHeader, ...?requestHeaders}));
-      } else if (method == ApiMethod.DELETE) {
+      } else if (method == ApiMethod.delete) {
         response = await _dio!.delete(url,
             options: Options(
                 followRedirects: false,
@@ -84,7 +82,7 @@ DATA : ${err.response}
                   return status! < 500;
                 },
                 headers: {...defaultHeader, ...?requestHeaders}));
-      } else if (method == ApiMethod.PATCH) {
+      } else if (method == ApiMethod.patch) {
         response = await _dio!.patch(url,
             options: Options(
                 followRedirects: false,
@@ -92,7 +90,7 @@ DATA : ${err.response}
                   return status! < 500;
                 },
                 headers: {...defaultHeader, ...?requestHeaders}));
-      } else if (method == ApiMethod.PUT) {
+      } else if (method == ApiMethod.put) {
         response = await _dio!.put(url,
             data: params,
             options: Options(

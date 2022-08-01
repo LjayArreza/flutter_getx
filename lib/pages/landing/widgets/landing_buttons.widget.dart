@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/core/common/constants.dart';
-import 'package:flutter_getx/core/common/reusable_components/custom_outlined_button.dart';
-import 'package:flutter_getx/core/common/reusable_components/custom_solid_button.dart';
-import 'package:flutter_getx/core/routes/app_pages.dart';
+import 'package:flutter_getx/app/config/constants.dart';
+import 'package:flutter_getx/app/core/reusable_components/custom_outlined_button.dart';
+import 'package:flutter_getx/app/core/reusable_components/custom_solid_button.dart';
+import 'package:flutter_getx/app/core/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class LandingLoginButton extends GetWidget {

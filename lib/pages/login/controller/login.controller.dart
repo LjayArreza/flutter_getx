@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/core/routes/app_pages.dart';
-import 'package:flutter_getx/repository/user.repository.dart';
+import 'package:flutter_getx/app/core/routes/app_pages.dart';
+import 'package:flutter_getx/domain/repositories/auth_repository.dart';
+import 'package:flutter_getx/domain/repositories/user.repository.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,6 +34,9 @@ class LoginController extends GetxController {
 
   final UserRepository userRepo;
   LoginController(this.userRepo);
+
+  // final AuthRepository authRepo;
+  // LoginController(this.authRepo);
 
   void loginUser() async {
     if (emailController.text.isNotEmpty &&

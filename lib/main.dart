@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/core/routes/app_pages.dart';
+import 'package:flutter_getx/app/core/routes/app_pages.dart';
 import 'package:get/route_manager.dart';
 
 void main() => runApp(MyApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/core/common/reusable_components/custom_reusable_textfields.dart';
+import 'package:flutter_getx/app/core/reusable_components/custom_reusable_textfields.dart';
 import 'package:flutter_getx/pages/login/controller/login.controller.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:get/get.dart';

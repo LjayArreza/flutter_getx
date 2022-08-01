@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^3.0.1
   form_field_validator: ^1.1.0
   snippet_coder_utils: ^1.0.12
+  tuple: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +83,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/svg/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
