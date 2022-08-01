@@ -42,6 +42,7 @@ dependencies:
   form_field_validator: ^1.1.0
   snippet_coder_utils: ^1.0.12
   tuple: ^2.0.0
+  flutter_dotenv: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,9 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/svg/
+    - .env
+    - .env.development
+    - .env.production
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

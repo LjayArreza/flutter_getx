@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/pages/landing/controller/landing.controller.dart';
 import 'package:flutter_getx/pages/landing/widgets/landing_buttons.widget.dart';
 import 'package:flutter_getx/pages/landing/widgets/landing_header.widget.dart';
 import 'package:flutter_getx/pages/landing/widgets/landing_login_via.widget.dart';
+import 'package:flutter_getx/presentation/controllers/landing/landing.controller.dart';
 import 'package:get/get.dart';
 
 class LandingPage extends GetView<LandingController> {

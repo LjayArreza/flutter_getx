@@ -1,4 +1,4 @@
-import 'package:flutter_getx/pages/register/controller/register.controller.dart';
+import 'package:flutter_getx/presentation/controllers/register/register.controller.dart';
 import 'package:flutter_getx/domain/repositories/user.repository.dart';
 import 'package:get/get.dart';
 

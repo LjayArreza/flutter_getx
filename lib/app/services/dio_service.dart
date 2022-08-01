@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter_getx/data/provider/network/apis/api_endpoint.dart';
 import 'package:flutter_getx/data/provider/network/apis/api_request_representable.dart';
+import 'package:flutter_getx/data/provider/network/everonment/environment.dart';
 import 'package:logger/logger.dart';
 
 class DioHttpService {
@@ -16,9 +17,11 @@ class DioHttpService {
     }
   };
 
+  static final BASE_URL = Environment.apiUrl;
+
   Future<DioHttpService> init() async {
     _dio = Dio(BaseOptions(
-        baseUrl: APIEndpoint.BASE_URL,
+        baseUrl: BASE_URL,
         connectTimeout: 3000,
         receiveTimeout: 3000,
         responseType: ResponseType.json));

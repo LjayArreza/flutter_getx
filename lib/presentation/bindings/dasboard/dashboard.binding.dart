@@ -1,4 +1,4 @@
-import 'package:flutter_getx/pages/dashboard/controller/dashboard.controller.dart';
+import 'package:flutter_getx/presentation/controllers/dashboard/dashboard.controller.dart';
 import 'package:flutter_getx/domain/repositories/user.repository.dart';
 import 'package:get/get.dart';
 

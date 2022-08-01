@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_getx/app/core/reusable_components/custom_reusable_textfields.dart';
-import 'package:flutter_getx/pages/register/controller/register.controller.dart';
+import 'package:flutter_getx/presentation/controllers/register/register.controller.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:get/get.dart';
 

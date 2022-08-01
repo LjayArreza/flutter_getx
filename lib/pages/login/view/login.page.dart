@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_getx/pages/login/controller/login.controller.dart';
+import 'package:flutter_getx/presentation/controllers/login/login.controller.dart';
 import 'package:flutter_getx/pages/login/widgets/login_button.widget.dart';
 import 'package:flutter_getx/pages/login/widgets/login_dont_have_account.widget.dart';
 import 'package:flutter_getx/pages/login/widgets/login_forgot_password_button.widget.dart';

@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_getx/app/core/routes/app_pages.dart';
+import 'package:flutter_getx/data/provider/network/everonment/environment.dart';
 import 'package:get/route_manager.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  await dotenv.load(fileName: Environment.mode);
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

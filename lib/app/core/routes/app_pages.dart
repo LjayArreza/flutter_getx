@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/pages/dashboard/binding/dashboard.binding.dart';
+import 'package:flutter_getx/presentation/bindings/dasboard/dashboard.binding.dart';
 import 'package:flutter_getx/pages/dashboard/view/dashboard.page.dart';
-import 'package:flutter_getx/pages/landing/binding/landing.binding.dart';
+import 'package:flutter_getx/presentation/bindings/landing/landing.binding.dart';
 import 'package:flutter_getx/pages/landing/view/landing.page.dart';
-import 'package:flutter_getx/pages/login/binding/login.binding.dart';
+import 'package:flutter_getx/presentation/bindings/login/login.binding.dart';
 import 'package:flutter_getx/pages/login/view/login.page.dart';
-import 'package:flutter_getx/pages/register/binding/register.binding.dart';
+import 'package:flutter_getx/presentation/bindings/register/register.binding.dart';
 import 'package:flutter_getx/pages/register/view/register.page.dart';
+import 'package:flutter_getx/presentation/bindings/register/register.binding.dart';
 
 import 'package:get/route_manager.dart';
 

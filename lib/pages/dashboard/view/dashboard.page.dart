@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_getx/app/core/routes/app_pages.dart';
-import 'package:flutter_getx/pages/dashboard/controller/dashboard.controller.dart';
+import 'package:flutter_getx/presentation/controllers/dashboard/dashboard.controller.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
